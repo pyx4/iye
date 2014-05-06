@@ -1,0 +1,24 @@
+PATH
+  remote: .
+  specs:
+    iye (1.0.2)
+      cuba (>= 3)
+      psych (>= 1.3.4)
+      tilt (>= 1.3)
+
+GEM
+  remote: http://rubygems.org/
+  specs:
+    cuba (3.1.1)
+      rack
+    psych (2.0.5)
+    rack (1.4.5)
+    rake (10.1.1)
+    tilt (1.4.1)
+
+PLATFORMS
+  ruby
+
+DEPENDENCIES
+  iye!
+  rake
