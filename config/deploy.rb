@@ -3,7 +3,7 @@ set :repo_url, 'git@github.com:pyx4/iye.git'
 
 # ask :branch, proc { `git rev-parse --abbrev-ref HEAD`.chomp }
 
-set :deploy_to, '/var/www/qualiproto.fr/pyx4-iye'
+set :deploy_to, '/var/www/pyx4.com/translate'
 set :scm, :git
 
 # set :format, :pretty

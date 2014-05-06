@@ -5,9 +5,9 @@ set :stage, :production
 # Supports bulk-adding hosts to roles, the primary
 # server in each group is considered to be the first
 # unless any hosts have the primary property set.
-role :app, %w{deployer@dev.qualiproto.fr}
-role :web, %w{deployer@dev.qualiproto.fr}
-role :db,  %w{deployer@dev.qualiproto.fr}
+role :app, %w{deployer@prod1.pyx4.com}
+role :web, %w{deployer@prod1.pyx4.com}
+role :db,  %w{deployer@prod1.pyx4.com}
 
 # Extended Server Syntax
 # ======================
@@ -15,7 +15,7 @@ role :db,  %w{deployer@dev.qualiproto.fr}
 # definition into the server list. The second argument
 # something that quacks like a hash can be used to set
 # extended properties on the server.
-server 'dev.qualiproto.fr', user: 'deployer', roles: %w{web app}
+server 'prod1.pyx4.com', user: 'deployer', roles: %w{web app}
 
 # you can set custom ssh options
 # it's possible to pass any option but you need to keep in mind that net/ssh understand limited list of options
