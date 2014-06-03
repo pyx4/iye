@@ -105,7 +105,7 @@ module I18nYamlEditor
       files.each {|file, translations|
         file_result = {}
         translations.each {|translation|
-          file_result[translation.name] = translation.text
+          file_result[translation.name] = translation.text unless !translation.text or translation.text == ''
         }
         result[file] = nest_hash(file_result)
       }
