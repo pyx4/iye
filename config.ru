@@ -3,6 +3,8 @@ $:.unshift('lib')
 require 'i18n_yaml_editor/app'
 require 'i18n_yaml_editor/web'
 
+Rack::Utils.key_space_limit = 262144
+
 app = I18nYamlEditor::App.new('./locales')
 app.load_translations
 app.store.create_missing_keys
